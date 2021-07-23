@@ -177,7 +177,10 @@ public class DisplayingFragment extends Fragment {
                 photoItem.setDescription(binding.displayDescription.getText().toString());
                 photoItem.setModifiedDate(System.currentTimeMillis());
                 viewModel.updatePhotos(photoItem);
-                Navigation.findNavController(binding.getRoot()).navigate(R.id.action_displayingFragment_to_homeFragment);
+                //Navigation.findNavController(binding.getRoot()).navigate(R.id.action_displayingFragment_to_homeFragment);
+                getActivity().onBackPressed();
+                Toast.makeText(getActivity(),"保存成功",Toast.LENGTH_SHORT).show();
+
                 break;
         }
         return true;
@@ -242,6 +245,6 @@ public class DisplayingFragment extends Fragment {
             viewModel.updatePhotos(photoItem);
         }
         else
-            Toast.makeText(getContext(),"failed to get image", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(),"failed to get image", Toast.LENGTH_LONG).show();
     }
 }

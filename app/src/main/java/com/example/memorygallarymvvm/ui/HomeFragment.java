@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -45,6 +46,12 @@ public class HomeFragment extends Fragment {
     private View view;
     private PhotoAdapter photoAdapter;
     private MainActivityViewModel viewModel;
+
+    private int mLastX;
+    private int mLastY;
+    private int mDownX;
+    private int mDownY;
+    private final int ADAPTER_VALUE = 25;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -43,12 +43,10 @@ public class PhotoItem {
     }
 
     public String getDescription() {
-        Log.d(TAG, id + "getDescription: ");
         return description;
     }
 
     public void setDescription(String description) {
-        Log.d(TAG, id + "setDescription: " + description);
         this.description = description;
     }
 
