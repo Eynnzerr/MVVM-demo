@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/emptyFragment"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Empty" />
+    <item
+        android:id="@+id/weatherFragment"
+        android:icon="@drawable/weather"
+        android:title="Weather" />
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/picture"
+        android:title="Gallary" />
+</menu>
